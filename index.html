@@ -144,6 +144,46 @@
       text-align: center;
       padding: 1rem 0;
     }
+            .toggle-button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 15px;
+            background: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .toggle-button:hover {
+            background: #1c598a;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .dark-mode {
+            background: #2c3e50;
+            color: white;
+        }
+
+        .dark-mode .container {
+            background: #34495e;
+            color: white;
+        }
+
+        .dark-mode h1, .dark-mode h2 {
+            color: #f1c40f;
+        }
+
+        .dark-mode .info div {
+            background: #3b4d61;
+        }
+
+        .dark-mode ul li {
+            background: #4c5d75;
+        }
   </style>
 </head>
 <body>
@@ -152,6 +192,8 @@
     <div class="identity">
       <img src="new.jpg" alt="Photo de Frédy Amoussou ANAHAHOUNDE" class="profile-photo">
       <div class="identity-text">
+          <button class="toggle-button" onclick="toggleTheme()">🌙 Mode Sombre</button>
+ 
         <h1>Frédy Amoussou ANAHAHOUNDE</h1>
         <p>Élève Ingénieur & Développeur Web</p>
       </div>
@@ -215,12 +257,7 @@
       <a href="https://wa.me/2290152552106">WhatsApp</a> | 
       <a href="https://www.facebook.com/profile.php?id=100082270214075">Facebook</a>
     </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Frédo AN. Tous droits réservés.</p>
-  </footer>
-
+    
 <script>
     function toggleSection(id) {
         var section = document.getElementById(id);
@@ -237,6 +274,12 @@
         }
     }
 </script>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Frédo AN. Tous droits réservés.</p>
+  </footer>
+
   
 </body>
 </html>
