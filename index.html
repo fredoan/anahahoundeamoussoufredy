@@ -8,106 +8,60 @@
   <meta name="author" content="Frédy Amoussou ANAHAHOUNDE">
   <meta name="robots" content="index, follow">
   <title>Biographie de Frédy Amoussou ANAHAHOUNDE</title>
+  <link rel="stylesheet" href="style.css">
   
-  <style>
-
-
-  </style>
 </head>
 <body>
 
   <header>
-    <div class="identity">
-      <img src="new.jpg" alt="Photo de Frédy Amoussou ANAHAHOUNDE" class="profile-photo">
-      <div class="identity-text">
-          <button class="toggle-button" onclick="toggleTheme()">🌙 Mode Sombre</button>
- 
-        <h1>Frédy Amoussou ANAHAHOUNDE</h1>
-        <p>Élève Ingénieur & Développeur Web</p>
-      </div>
-    </div>
+  
     <meta name="google-site-verification" content="svxC7NsqXLruovA1i41STjl-SkGkEYoSbGkqHq-93Lw" />
-   
+   <span class="sticker">Acceuil du site</span>
+
   </header>
-
-  <nav>
-    <ul>
-      <li><a href="#bibliographie">Biographie</a></li>
-      <li><a href="#competences">Compétences</a></li>
-      <li><a href="#galerie">Galerie</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
+  <!-- Section principale d’accueil -->
   <main>
-    <section id="bibliographie">
-      <h2>Biographie</h2>
-      <p>
-        Frédy Amoussou ANAHAHOUNDE, connu sous le nom de <strong>Frédo AN</strong>, est un passionné de développement web et d'ingénierie. Né le 4 décembre 2003 au <strong>Bénin</strong>, il poursuit une carrière académique brillante avec un intérêt marqué pour les nouvelles technologies.
-      </p>
-    </section>
-
-    <section id="competences">
-      <h2>Compétences</h2>
-      <ul>
-        <li>Développement web (HTML, CSS, Java, JavaScript)</li>
-        <li>Programmation et bases de données (MySQL, Firebase)</li>
-        <li>Création de contenus (réseaux sociaux)</li>
-      </ul>
-    </section>
-
-    <section id="galerie">
-      <h2>Galerie</h2>
-      <div class="gallery">
-        <img src="aa1.jpg" alt="Image 1">
-        <img src="aa2.jpg" alt="Image 2">
-        <img src="ing.jpg" alt="Image 3">
+    <section id="accueil" class="accueil-section">
+      <div class="profil-container">
+        <img src="a6.jpg" alt="Photo de Frédy" class="photo-profil">
       </div>
-    </section>
-
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="portfolio">
-        <div class="portfolio-item">
-          <img src="11.jpg" alt="Projet 1">
-        </div>
-        <div class="portfolio-item">
-          <img src="22.jpg" alt="Projet 2">
+      <div class="infos-container">
+        <h2>Frédy Amoussou ANAHAHOUNDE</h2>
+        <p>Élève ingénieur, développeur web, programmeur</p>
+        <div class="stickers">
+          <span class="sticker">HTML</span>
+          <span class="sticker">CSS</span>
+          <span class="sticker">JavaScript</span>
+          <span class="sticker">Python</span>
+          <!-- Ajoute d'autres stickers si tu veux -->
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Retrouvez-moi sur :</p>
-      <a href="mailto:fredyanahahounde@gmail.com">Email</a> | 
-      <a href="https://wa.me/2290152552106">WhatsApp</a> | 
-      <a href="https://www.facebook.com/profile.php?id=100082270214075">Facebook</a>
-    </section>
+    <!-- Remplacement des sections par des boutons de navigation vers les pages correspondantes -->
+    <div class="navigation-buttons">
+      <a href="biographie.html" class="button">Biographie</a>
+      <a href="competences.html" class="button">Compétences</a>
+      <a href="ecole.html" class="button">École / Université</a>
+      <a href="portfolio.html" class="button">Portfolio</a>
+      <a href="galerie.html" class="button">Galerie</a>
+      <a href="contact.html" class="button">Contacter-le</a>
+    </div>
     
-<script>
-    function toggleSection(id) {
-        var section = document.getElementById(id);
-        section.classList.toggle("hidden");
-    }
-
-    function toggleTheme() {
-        document.body.classList.toggle("dark-mode");
-        var button = document.querySelector(".toggle-button");
-        if (document.body.classList.contains("dark-mode")) {
-            button.innerHTML = "☀️ Mode Clair";
-        } else {
-            button.innerHTML = "🌙 Mode Sombre";
-        }
-    }
-</script>
+    <section>
+      <center>« Jeune d’aujourd’hui, ne sous-estime jamais la puissance de tes idées. Avec du code, de la créativité et de la foi, tu peux bâtir un avenir solide, utile et grand. Ce n’est pas l’âge qui fait la grandeur, c’est la vision,
+        la détermination et l’action.
+Jeune d’aujourd’hui, code ton avenir, bâtis ta grandeur. »</center>
+      <br></br>
+</section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Frédo AN. Tous droits réservés.</p>
-  </footer>
-
-  
+<!-- Footer avec bouton retour à la page précédente -->
+<footer>
+  <p>&copy; 2025 Frédy Amoussou Anahahoundé. Tous droits réservés.</p>
+  <button onclick="goBack()" class="back-to-prev">Retour</button>
+</footer>
+  <script src="script.js"></script>  
 </body>
+
 </html>
