@@ -1,0 +1,213 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000; /* Noir en fond */
+  color: #fff; /* Texte blanc */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding-bottom: 60px; /* espace pour le footer fixe */
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #111;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* Section Accueil */
+.accueil-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+}
+
+/* Photo de profil */
+.photo-profil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #333; /* Cercle sombre autour de la photo */
+  object-fit: cover;
+}
+
+/* Informations */
+.infos-container {
+  max-width: 500px;
+  text-align: center;
+}
+
+.infos-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.infos-container p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Stickers */
+.stickers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.sticker {
+  background-color: #FFD700; /* Jaune pour les stickers */
+  color: #000;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Sections générales */
+section {
+  padding: 2rem 1rem;
+  border-top: 1px solid #222;
+}
+
+section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #FFD700;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #111;
+  text-align: center;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 0.9rem;
+  z-index: 1000;
+}
+/* Style du bouton retour dans le footer */
+footer .back-to-prev {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #FFD700;
+  color: black;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+footer .back-to-prev:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Boutons de navigation supplémentaires */
+.navigation-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #FFD700;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #333;
+  color: white;
+}
+.contact-section {
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 14px 30px;
+    margin: 10px;
+    border-radius: 6px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.contact-button.facebook {
+    background-color: #3b5998;
+}
+
+.contact-button.whatsapp {
+    background-color: #25d366;
+}
+
+.contact-button.email {
+    background-color: #d44638;
+}
+
+.contact-button:hover {
+    background-color: #2d4373;
+}
+
+.contact-button.whatsapp:hover {
+    background-color: #128c7e;
+}
+
+.contact-button.email:hover {
+    background-color: #a33f2b;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    border: 3px solid black;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
